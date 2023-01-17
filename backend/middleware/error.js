@@ -8,7 +8,7 @@ module.exports=(err,req,res,next)=>{
         
         success:false,
         //can use message:err.stack , if we want complete error details , instead of just error code
-        error:err 
+        error:err.stack 
         
     });
 };

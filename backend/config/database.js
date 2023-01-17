@@ -5,8 +5,6 @@ const connectDatabase=()=>{
         useUnifiedTopology: true,}).then((data)=>
     {
         console.log(`Connected to MongoDB with host ${data.connection.host} `);
-    }).catch((err)=>{
-    console.log(err)
     })
 }
 
